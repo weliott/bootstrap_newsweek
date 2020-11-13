@@ -1,5 +1,10 @@
+body{
+  background-color:#f4f4f4;
+}
+
 .container-fluid {
   padding: 0;
+  background-color: white;
 }
 
 @media screen and (min-width: 1140px) {
@@ -11,6 +16,11 @@
 
 a {
   text-decoration: none;
+}
+
+.card-body h5 a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
 }
 
 p {
@@ -60,8 +70,163 @@ p {
   color: grey;
 }
 
-#section-name {
-  font-size: 12px;
-  color: #a7a7a7;
+#news #news-section-name {
+  font-size: 16px;
+  color: #8e8e8e;
   text-transform: uppercase;
+}
+
+#news .card-img-top span {
+  padding: 6px;
+  bottom: 0;
+  left: 0;
+  color: red;
+  background-color: white;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: small;
+}
+
+#feature-stories .card-img-top img {
+  width: 100%;
+  height: auto;
+}
+
+#news .card-body h5 a {
+  color: black;
+  font-weight: bolder;
+}
+
+#news .card-body p {
+  color: #363636;;
+  font-weight: lighter;
+  font-size: 95%;
+}
+
+/* #top-story .card {
+  max-width: 506px;
+} */
+
+#top-story .card-img-top img {
+  width: 100%;
+  height: auto;
+}
+
+#my-turn .card {
+  max-width: 155px;
+}
+
+#my-turn .card-body p a {
+  color: #8e8e8e;
+}
+
+#my-turn .card-body p a:hover {
+  text-decoration: none;  
+}
+
+#culture .card {
+  max-width: 155px;
+}
+
+#culture .card-body p a:hover {
+  text-decoration: none;  
+}
+
+#more-stories a {
+  color:black;
+  font-weight: bold;
+}
+
+#more-stories a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+#more-stories p {
+  padding-top: 10px;
+  color: #535353;
+  font-weight: light;
+}
+
+#debate p {
+  color: #555;
+  font-size: smaller;
+  font-weight: bold;
+}
+
+#debate a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+#debate #debate-t {
+  border-top: 3px solid #d9d9d9;
+}
+
+#debate #debate-b {
+  border-bottom: 3px solid #d9d9d9;
+}
+
+#debate #vs {
+  z-index: 1;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  padding: 5px 0;
+  font-size: smaller;
+  font-weight: 500;
+  text-align: center;
+}
+
+#debate #vs-box:before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 0;
+  right: 0;
+  display: block;
+  height: 1px;
+  background-color: #d9d9d9;
+}
+
+#debate #vs-box:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: block;
+  height: 1px;
+  background-color: #d9d9d9;
+}
+
+
+#opinion img {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+
+#opinion a {
+  color:black;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+#opinion a:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(49, 45, 45);
+}
+
+#opinion p {
+  padding-top: 10px;
+  color: #535353;
+  font-weight: light;
+  font-size: small;
+  letter-spacing: -1px;
 }
