@@ -8,9 +8,8 @@ body{
 }
 
 @media screen and (min-width: 1140px) {
-  .container-max-width {
+  .container, .container-max-width {
     max-width: 1325px;
-    
   }
 }
 
@@ -170,7 +169,7 @@ p {
 
 #debate #vs {
   z-index: 1;
-  position: relative;
+  /* position: relative; */
   width: 30px;
   height: 30px;
   margin: auto;
@@ -229,4 +228,58 @@ p {
   font-weight: light;
   font-size: small;
   letter-spacing: -1px;
+}
+
+#magazine .n-logo {
+  width: 25px;
+  height: 25px;
+  padding: 5 5px;
+  margin: 0 5px;
+  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+}
+
+#magazine #section-name {
+  font-size: 20px;
+}
+
+#magazine #feature-magazine .card-img-top span {
+  padding: 6px;
+  bottom: 0;
+  left: 0;
+  color: red;
+  background-color: white;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: small;
+}
+
+#magazine #feature-magazine .card-body {
+  border-top: 5px solid white;
+}
+
+
+#magazine #magazine-topic a,
+#magazine #focus-magazine a {
+  color:black;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+#magazine #magazine-topic a:hover,
+#magazine #focus-magazine a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+#magazine #focus-magazine .card-img-top span {
+  padding: 6px;
+  bottom: 0;
+  left: 0;
+  color: white;
+  background-color: red;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: small;
 }
